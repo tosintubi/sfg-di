@@ -4,14 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.tommot.sfgdi.services.ConstructorGreetingService;
 
-class SetterInjectedControllerTest {
+class ConstructorInjectorControllerTest {
 
-    SetterInjectedController controller;
+    ConstructorInjectorController controller;
     @BeforeEach
     void setUp() {
-        // We used setter method here.
-        controller = new SetterInjectedController();
-        controller.setGreetingService(new ConstructorGreetingService());
+        controller = new ConstructorInjectorController(new ConstructorGreetingService());
     }
 
     @Test
