@@ -4,16 +4,16 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 
-@Profile({"mysql"}) // Default profile is MySql Connection
+@Profile({"postgres","default"}) // Default profile is MySql Connection
 @Service("dbService")
-public class MySqlDBService  implements DatabaseService{
+public class PostgreSqlDBService  implements DatabaseService{
     @Override
     public String Connect() {
-        return "Connected to MySql 7.5.23 Database";
+        return "Connected to PostgreSql Database";
     }
 
     @Override
     public String CloseConnection() {
-        return "MySql 7.5.23 Database Connection Closed";
+        return "PostgreSql Database Connection Closed";
     }
 }

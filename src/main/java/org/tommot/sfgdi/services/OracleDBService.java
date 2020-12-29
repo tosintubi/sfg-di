@@ -3,7 +3,7 @@ package org.tommot.sfgdi.services;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile({"oracle","default"})
+@Profile({"oracle"})
 @Service("dbService")
 public class OracleDBService implements DatabaseService {
     @Override

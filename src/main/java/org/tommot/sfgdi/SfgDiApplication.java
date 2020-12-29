@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.tommot.sfgdi.controllers.*;
 import org.tommot.sfgdi.services.DatabaseService;
+import org.tommot.sfgdi.services.GreetingService;
 
 @SpringBootApplication
 public class SfgDiApplication {
