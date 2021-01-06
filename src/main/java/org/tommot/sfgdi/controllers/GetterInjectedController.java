@@ -6,14 +6,15 @@ import org.springframework.stereotype.Controller;
 import org.tommot.sfgdi.services.GreetingService;
 
 @Controller
-public class PropertyInjectedController {
-
-    @Autowired
-    @Qualifier("greetingServiceImpl")
-    public GreetingService greetingServiceImpl;
+public class GetterInjectedController {
+    private GreetingService greetingService;
 
     public String sayHello(){
-        return greetingServiceImpl.sayGreeting();
+        return greetingService.sayGreeting();
     }
 
+    @Autowired
+    public void setGreetingService(@Qualifier("getterGreetingService") GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
 }
