@@ -10,7 +10,7 @@ import org.tommot.sfgdi.services.GreetingService;
 @SpringBootApplication
 public class SfgDiApplication {
 	public static void main(String[] args) {
-
+		/*
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
 		System.out.println("+++++++++++++ Database Connection ++++++++++");
@@ -50,7 +50,7 @@ public class SfgDiApplication {
 		System.out.println(constructorInjectorController.getGreeting());
 
 		System.out.println(databaseController.Disconnect());
-
+*/
 
 	}
 

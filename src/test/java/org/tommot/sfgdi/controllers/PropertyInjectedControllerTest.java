@@ -6,6 +6,7 @@ import org.tommot.sfgdi.services.ConstructorGreetingService;
 
 class PropertyInjectedControllerTest {
 
+    /*
     PropertyInjectedController controller;
 
     @BeforeEach
@@ -18,5 +19,5 @@ class PropertyInjectedControllerTest {
     @Test
     void getGreeting() {
         System.out.println(controller.getGreeting());
-    }
+    }*/
 }
